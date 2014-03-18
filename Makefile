@@ -1,2 +1,2 @@
 build:
-	@cat pesticide.js | xargs >> pesticide.min.js
+	@cat pesticide.js | sed -e 's/^ *//' | tr -d '\n' >> pesticide.min.js
