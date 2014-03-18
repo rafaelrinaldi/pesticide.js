@@ -1,4 +1,4 @@
-(function() {
+(function(context) {
   var COLOR_TABLE = {
       'body': '#2980b9',
       'article': '#3498db',
@@ -103,11 +103,15 @@
       all = document.body.getElementsByTagName('*'),
       count = 0,
       item,
-      itemBorderColor;
+      itemBorderColor,
+      db = context.sessionStorage,
+      isPesticideDebugging = db.getItem('isPesticideDebugging') || false;
 
   for(; count < all.length; ++count) {
     item = all[count];
     itemBorderColor = COLOR_TABLE[item.tagName.toLowerCase()] || 'red';
-    item.style.outline = '1px solid ' + itemBorderColor;
+    item.style.outline = '1px solid ' + !isPesticideDebugging ? 'transparent' : itemBorderColor;
   }
-})();
+
+  db.setItem('isPesticideDebugging', !isPesticideDebugging);
+})(window);
