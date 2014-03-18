@@ -1,4 +1,6 @@
 (function(context) {
+  if(!context.PESTICIDE) context.PESTICIDE = {isDebugging: false};
+
   var COLOR_TABLE = {
       'body': '#2980b9',
       'article': '#3498db',
@@ -104,16 +106,13 @@
       count = 0,
       item,
       itemBorderColor,
-      db = context.sessionStorage,
-      isPesticideDebugging = db.getItem('isPesticideDebugging') || false;
+      isDebugging = context.PESTICIDE.isDebugging;
 
   for(; count < all.length; ++count) {
     item = all[count];
     itemBorderColor = COLOR_TABLE[item.tagName.toLowerCase()] || 'red';
-    item.style.outline = '1px solid ' + !isPesticideDebugging ? 'transparent' : itemBorderColor;
+    item.style.outline = '1px solid ' + (!isDebugging ? itemBorderColor : 'transparent');
   }
 
-  isPesticideDebugging != isPesticideDebugging;
-
-  db.setItem('isPesticideDebugging', isPesticideDebugging);
+  context.PESTICIDE.isDebugging = !isDebugging;
 })(window);
