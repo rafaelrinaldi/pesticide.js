@@ -5,4 +5,4 @@ This is an attempt to reproduce the same sort of behavior of [Pesticide](http://
 
 ## Usage
 
-Simply drag <a href="javascript:(function(){var snippet=document.createElement('script');snippet.setAttribute('src', 'http://rawgithub.com/rafaelrinaldi/pesticide.js/master/pesticide.js');document.body.appendChild(snippet)})();">pesticide.js</a> to your bookmarklets and you're ready to go!
+Simply drag <a href="http://rinaldi.io/pesticide.js">this bookmarklet</a> to your bookmarks bar and you're ready to go!
