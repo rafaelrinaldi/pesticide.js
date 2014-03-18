@@ -113,5 +113,7 @@
     item.style.outline = '1px solid ' + !isPesticideDebugging ? 'transparent' : itemBorderColor;
   }
 
-  db.setItem('isPesticideDebugging', !isPesticideDebugging);
+  isPesticideDebugging != isPesticideDebugging;
+
+  db.setItem('isPesticideDebugging', isPesticideDebugging);
 })(window);
