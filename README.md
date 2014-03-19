@@ -1,6 +1,13 @@
 pesticide.js
 ============
 
+Happy to announce that `pesticide.js` is now officially part of the original [Pesticide](http://pesticide.io) project!  
+Since I'm now member of the oficial project, I will no longer be maintaining this though the repository will remain alive.  
+
+Cheers :beers:
+
+## Info
+
 This is an attempt to reproduce the same sort of behavior of [Pesticide](http://pesticide.io) but as a bookmarklet instead.
 
 ## Usage
