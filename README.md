@@ -2,7 +2,7 @@ pesticide.js
 ============
 
 Happy to announce that `pesticide.js` is now officially part of the original [Pesticide](http://pesticide.io) project!
-Since [I'm a contributor of the oficial project](https://github.com/mrmrs/pesticide/graphs/contributors), I will no longer be maintaining this though the repository will remain alive.
+Since [I'm now a contributor of the oficial project](https://github.com/mrmrs/pesticide/graphs/contributors), I will no longer be maintaining this though the repository will remain alive.
 
 Cheers :beers:
 
